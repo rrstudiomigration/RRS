@@ -2,6 +2,10 @@
   "name": "rrs",
   "version": "0.0.1",
   "packageManager": "yarn@3.2.2",
+  "engines": {
+    "node": "^16.15.0",
+    "yarn": "^3.2.2"
+  },
   "private": true,
   "scripts": {
     "start": "react-scripts start",
@@ -10,16 +14,16 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@emotion/react": "latest",
-    "@emotion/styled": "latest",
-    "@mui/icons-material": "latest",
-    "@mui/material": "latest",
-    "firebase-tools": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-helmet": "latest",
-    "react-router-dom": "latest",
-    "react-scripts": "latest"
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.3",
+    "firebase-tools": "^11.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1"
   },
   "browserslist": {
     "production": [
