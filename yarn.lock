@@ -1769,7 +1769,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.10.0":
+"@emotion/react@npm:11.10.0":
   version: 11.10.0
   resolution: "@emotion/react@npm:11.10.0"
   dependencies:
@@ -1819,7 +1819,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^11.10.0":
+"@emotion/styled@npm:11.10.0":
   version: 11.10.0
   resolution: "@emotion/styled@npm:11.10.0"
   dependencies:
@@ -2366,7 +2366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:^5.8.4":
+"@mui/icons-material@npm:5.8.4":
   version: 5.8.4
   resolution: "@mui/icons-material@npm:5.8.4"
   dependencies:
@@ -2382,7 +2382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/material@npm:^5.9.3":
+"@mui/material@npm:5.9.3":
   version: 5.9.3
   resolution: "@mui/material@npm:5.9.3"
   dependencies:
@@ -7607,7 +7607,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-tools@npm:^11.4.2":
+"firebase-tools@npm:11.4.2":
   version: 11.4.2
   resolution: "firebase-tools@npm:11.4.2"
   dependencies:
@@ -13332,7 +13332,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.2.0":
+"react-dom@npm:18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -13358,7 +13358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-helmet@npm:^6.1.0":
+"react-helmet@npm:6.1.0":
   version: 6.1.0
   resolution: "react-helmet@npm:6.1.0"
   dependencies:
@@ -13400,7 +13400,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^6.3.0":
+"react-router-dom@npm:6.3.0":
   version: 6.3.0
   resolution: "react-router-dom@npm:6.3.0"
   dependencies:
@@ -13424,7 +13424,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-scripts@npm:^5.0.1":
+"react-scripts@npm:5.0.1":
   version: 5.0.1
   resolution: "react-scripts@npm:5.0.1"
   dependencies:
@@ -13515,7 +13515,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
+"react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -14014,16 +14014,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rrs@workspace:."
   dependencies:
-    "@emotion/react": ^11.10.0
-    "@emotion/styled": ^11.10.0
-    "@mui/icons-material": ^5.8.4
-    "@mui/material": ^5.9.3
-    firebase-tools: ^11.4.2
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-helmet: ^6.1.0
-    react-router-dom: ^6.3.0
-    react-scripts: ^5.0.1
+    "@emotion/react": 11.10.0
+    "@emotion/styled": 11.10.0
+    "@mui/icons-material": 5.8.4
+    "@mui/material": 5.9.3
+    firebase-tools: 11.4.2
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-helmet: 6.1.0
+    react-router-dom: 6.3.0
+    react-scripts: 5.0.1
   languageName: unknown
   linkType: soft
 
