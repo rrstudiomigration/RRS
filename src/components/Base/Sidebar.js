@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   Toolbar,
@@ -8,9 +8,23 @@ import {
   CardMedia,
   Stack,
 } from "@mui/material";
+import useMediaQuery from '@mui/material/useMediaQuery';
 import logo from "../img/logo.svg";
+import { DarkModeContext } from "../../context/darkModeContext";
 
 export default function Sidebar() {
+
+  const { dispatch } = useContext(DarkModeContext);
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+  const handleSystemThemeClick = () => {
+    if (prefersDarkMode) {
+      dispatch({ type: 'DARK' })
+    } else {
+      dispatch({ type: 'LIGHT' })
+    }
+  }
+
   return (
     <nav>
       <Toolbar>
@@ -99,9 +113,9 @@ export default function Sidebar() {
           bottom: 0,
         }}
       >
-        <Button>Light</Button>
-        <Button>Dark</Button>
-        <Button>System</Button>
+        <Button onClick={() => dispatch({ type: 'LIGHT' })}>Light</Button>
+        <Button onClick={() => dispatch({ type: 'DARK' })}>Dark</Button>
+        <Button onClick={handleSystemThemeClick}>System</Button>
       </ButtonGroup>
     </nav>
   );

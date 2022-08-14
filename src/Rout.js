@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import App from "./App";
 import Main from "./components/Main/Main";
 import Portfolio from "./components/Portfolio/Portfolio";

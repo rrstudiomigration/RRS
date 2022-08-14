@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { AppBar, Box, CssBaseline, Drawer, IconButton } from "@mui/material";
 import Sidebar from "./components/Base/Sidebar";
@@ -9,7 +9,7 @@ import logo from "./components/img/logo.svg";
 const drawerWidth = 240;
 
 export default function App() {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
