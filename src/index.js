@@ -1,15 +1,15 @@
 import React, { StrictMode } from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { DarkModeContextProvider } from './context/darkModeContext'
 import Root from './Root'
 
 const rootElement = document.getElementById('root')
+const root = createRoot(rootElement)
 
-ReactDOM.render(
+root.render(
   <StrictMode>
     <DarkModeContextProvider>
       <Root />
     </DarkModeContextProvider>
-  </StrictMode>,
-  rootElement
+  </StrictMode>
 )
