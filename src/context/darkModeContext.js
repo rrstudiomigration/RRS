@@ -1,21 +1,26 @@
-import { createContext, useReducer } from "react"
-import DarkModeReducer from "./darkModeReducer";
-import useMediaQuery from '@mui/material/useMediaQuery';
+import React, { createContext, useReducer } from 'react'
+import propTypes from 'prop-types'
+import DarkModeReducer from './darkModeReducer'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 const INITIAL_STATE = {
-    darkMode: true
+	darkMode: true
 }
-export const DarkModeContext = createContext(INITIAL_STATE);
+export const DarkModeContext = createContext(INITIAL_STATE)
 
 export const DarkModeContextProvider = ({ children }) => {
-    const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-    const INITIAL_STATE_SYSTEM = { ...INITIAL_STATE, darkMode: prefersDarkMode }
+	const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
+	const INITIAL_STATE_SYSTEM = { ...INITIAL_STATE, darkMode: prefersDarkMode }
 
-    const [state, dispatch] = useReducer(DarkModeReducer, INITIAL_STATE_SYSTEM);
+	const [state, dispatch] = useReducer(DarkModeReducer, INITIAL_STATE_SYSTEM)
 
-    return (
-        <DarkModeContext.Provider value={{ darkMode: state.darkMode, dispatch }}>
-            {children}
-        </DarkModeContext.Provider>
-    )
+	return (
+		<DarkModeContext.Provider value={{ darkMode: state.darkMode, dispatch }}>
+			{children}
+		</DarkModeContext.Provider>
+	)
+}
+
+DarkModeContextProvider.propTypes = {
+	children: propTypes.object.isRequired
 }
