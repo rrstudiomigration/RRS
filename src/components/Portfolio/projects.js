@@ -20,84 +20,84 @@ import stankopark from '../img/projects/stankopark_by.webp'
 import trudohrana from '../img/projects/trudohrana_org.webp'
 
 export const itemData = [
-	{
-		img: teltsov,
-		title: 'Teltsov.by',
-	},
-	{
-		img: akolica,
-		title: '',
-	},
-	{
-		img: aldarinvest,
-		title: '',
-	},
-	{
-		img: aromaterra,
-		title: '',
-	},
-	{
-		img: bytsennosti,
-		title: '',
-	},
-	{
-		img: casexstoma,
-		title: '',
-	},
-	{
-		img: clearhands,
-		title: '',
-	},
-	{
-		img: cond,
-		title: '',
-	},
-	{
-		img: condvent,
-		title: '',
-	},
-	{
-		img: healthmedical,
-		title: '',
-	},
-	{
-		img: imred,
-		title: '',
-	},
-	{
-		img: kafekuhnya,
-		title: '',
-	},
-	{
-		img: latrade,
-		title: '',
-	},
-	{
-		img: magister,
-		title: '',
-	},
-	{
-		img: medmagister,
-		title: '',
-	},
-	{
-		img: pavetravod,
-		title: '',
-	},
-	{
-		img: pegasgonda,
-		title: '',
-	},
-	{
-		img: projectshop,
-		title: '',
-	},
-	{
-		img: stankopark,
-		title: '',
-	},
-	{
-		img: trudohrana,
-		title: '',
-	},
+  {
+    img: teltsov,
+    title: 'Teltsov.by',
+  },
+  {
+    img: akolica,
+    title: '',
+  },
+  {
+    img: aldarinvest,
+    title: '',
+  },
+  {
+    img: aromaterra,
+    title: '',
+  },
+  {
+    img: bytsennosti,
+    title: '',
+  },
+  {
+    img: casexstoma,
+    title: '',
+  },
+  {
+    img: clearhands,
+    title: '',
+  },
+  {
+    img: cond,
+    title: '',
+  },
+  {
+    img: condvent,
+    title: '',
+  },
+  {
+    img: healthmedical,
+    title: '',
+  },
+  {
+    img: imred,
+    title: '',
+  },
+  {
+    img: kafekuhnya,
+    title: '',
+  },
+  {
+    img: latrade,
+    title: '',
+  },
+  {
+    img: magister,
+    title: '',
+  },
+  {
+    img: medmagister,
+    title: '',
+  },
+  {
+    img: pavetravod,
+    title: '',
+  },
+  {
+    img: pegasgonda,
+    title: '',
+  },
+  {
+    img: projectshop,
+    title: '',
+  },
+  {
+    img: stankopark,
+    title: '',
+  },
+  {
+    img: trudohrana,
+    title: '',
+  },
 ]

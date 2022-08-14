@@ -6,10 +6,10 @@ import Root from './Root'
 const rootElement = document.getElementById('root')
 
 ReactDOM.render(
-	<StrictMode>
-		<DarkModeContextProvider>
-			<Root />
-		</DarkModeContextProvider>
-	</StrictMode>,
-	rootElement
+  <StrictMode>
+    <DarkModeContextProvider>
+      <Root />
+    </DarkModeContextProvider>
+  </StrictMode>,
+  rootElement
 )
