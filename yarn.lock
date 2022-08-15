@@ -7510,9 +7510,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-tools@npm:11.6.0":
-  version: 11.6.0
-  resolution: "firebase-tools@npm:11.6.0"
+"firebase-tools@npm:11.7.0":
+  version: 11.7.0
+  resolution: "firebase-tools@npm:11.7.0"
   dependencies:
     "@google-cloud/pubsub": ^3.0.1
     abort-controller: ^3.0.0
@@ -7538,6 +7538,7 @@ __metadata:
     fs-extra: ^10.1.0
     glob: ^7.1.2
     google-auth-library: ^7.11.0
+    googleapis: ^105.0.0
     inquirer: ^8.2.0
     js-yaml: ^3.13.1
     jsonwebtoken: ^8.5.1
@@ -7576,7 +7577,7 @@ __metadata:
     ws: ^7.2.3
   bin:
     firebase: lib/bin/firebase.js
-  checksum: 5ec9d114d37b78a61614bcf7a36e82d9229fe921949a7357fa23af464f027e6640560d243947e53e8289aa3d7ac1045ac2635e6d4d9f6e0ec9137480b76b2a86
+  checksum: 8c962f7131c606529bb37aba183b04a90d9c6c1d20e60c0d842345c88dadc12d97ecef6c9efd7ba8a2e8e044871d90bc0b9b901487aa29131fa269685ab95852
   languageName: node
   linkType: hard
 
@@ -7873,7 +7874,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gaxios@npm:^5.0.0":
+"gaxios@npm:^5.0.0, gaxios@npm:^5.0.1":
   version: 5.0.1
   resolution: "gaxios@npm:5.0.1"
   dependencies:
@@ -8217,6 +8218,30 @@ __metadata:
   bin:
     gp12-pem: build/src/bin/gp12-pem.js
   checksum: f41a88d339e9fe633dc915bc0f3335c0196fa318f994dcd5dfaa0f3f7aa2d99f6122e2c80bd0f4bb22f2b61ff645b7cc782a74e12ceaf6c9ad9e08cdeb4d615e
+  languageName: node
+  linkType: hard
+
+"googleapis-common@npm:^6.0.0":
+  version: 6.0.1
+  resolution: "googleapis-common@npm:6.0.1"
+  dependencies:
+    extend: ^3.0.2
+    gaxios: ^5.0.1
+    google-auth-library: ^8.0.2
+    qs: ^6.7.0
+    url-template: ^2.0.8
+    uuid: ^8.0.0
+  checksum: 46bfdd4673006075e3349500e312f2267f1d2830434d76b7b20d8de3ebfb9c5a3f525cc88b6e89f5d8f5f8f3ff9fcee90e4667dac45306cddb05d0f70b97b999
+  languageName: node
+  linkType: hard
+
+"googleapis@npm:^105.0.0":
+  version: 105.0.0
+  resolution: "googleapis@npm:105.0.0"
+  dependencies:
+    google-auth-library: ^8.0.2
+    googleapis-common: ^6.0.0
+  checksum: 39056eed8b5d861dffa591af7d23cd8761752e7f47f57811de8781781d9f917a2e4eee555fc70fcbd17aa07668e65d8f5e38870114adb4877a3cb95b5f7530e8
   languageName: node
   linkType: hard
 
@@ -13051,7 +13076,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:^6.6.0":
+"qs@npm:^6.6.0, qs@npm:^6.7.0":
   version: 6.11.0
   resolution: "qs@npm:6.11.0"
   dependencies:
@@ -13875,7 +13900,7 @@ __metadata:
     "@emotion/styled": 11.10.0
     "@mui/icons-material": 5.8.4
     "@mui/material": 5.10.0
-    firebase-tools: 11.6.0
+    firebase-tools: 11.7.0
     react: 18.2.0
     react-dom: 18.2.0
     react-helmet: 6.1.0
@@ -15605,6 +15630,13 @@ __metadata:
   dependencies:
     prepend-http: ^2.0.0
   checksum: 1040e357750451173132228036aff1fd04abbd43eac1fb3e4fca7495a078bcb8d33cb765fe71ad7e473d9c94d98fd67adca63bd2716c815a2da066198dd37217
+  languageName: node
+  linkType: hard
+
+"url-template@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "url-template@npm:2.0.8"
+  checksum: 4183fccd74e3591e4154134d4443dccecba9c455c15c7df774f1f1e3fa340fd9bffb903b5beec347196d15ce49c34edf6dec0634a95d170ad6e78c0467d6e13e
   languageName: node
   linkType: hard
 
