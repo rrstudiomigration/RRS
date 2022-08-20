@@ -1,16 +1,16 @@
-import React from "react";
-import { Box, Container, Typography } from "@mui/material";
-import hero_seo from "../img/hero_seo.svg";
-import { Helmet } from "react-helmet";
+import React from 'react'
+import { Box, Container, Typography } from '@mui/material'
+import hero_seo from '../img/hero_seo.svg'
+import { Helmet } from 'react-helmet'
 
 export default function Contact() {
   return (
     <Box
       sx={{
-        alignItems: "center",
-        display: "flex",
+        alignItems: 'center',
+        display: 'flex',
         flexGrow: 1,
-        minHeight: "100%",
+        minHeight: '100%',
       }}
     >
       <Helmet>
@@ -20,9 +20,9 @@ export default function Contact() {
       <Container maxWidth="md">
         <Box
           sx={{
-            alignItems: "center",
-            display: "flex",
-            flexDirection: "column",
+            alignItems: 'center',
+            display: 'flex',
+            flexDirection: 'column',
           }}
         >
           <Typography align="center" color="textPrimary" variant="h1">
@@ -31,14 +31,14 @@ export default function Contact() {
           <Typography align="center" color="textPrimary" variant="h4">
             Contact
           </Typography>
-          <Box sx={{ textAlign: "center" }}>
+          <Box sx={{ textAlign: 'center' }}>
             <img
               alt="SEO"
               src={hero_seo}
               style={{
                 marginTop: 50,
-                display: "inline-block",
-                maxWidth: "100%",
+                display: 'inline-block',
+                maxWidth: '100%',
                 width: 560,
               }}
             />
@@ -46,5 +46,5 @@ export default function Contact() {
         </Box>
       </Container>
     </Box>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useContext } from 'react'
+import { NavLink } from 'react-router-dom'
 import {
   Toolbar,
   Divider,
@@ -7,15 +7,15 @@ import {
   ButtonGroup,
   CardMedia,
   Stack,
-} from "@mui/material";
-import useMediaQuery from '@mui/material/useMediaQuery';
-import logo from "../img/logo.svg";
-import { DarkModeContext } from "../../context/darkModeContext";
+} from '@mui/material'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import logo from '../img/logo.svg'
+import { DarkModeContext } from '../../context/darkModeContext'
 
 export default function Sidebar() {
 
-  const { dispatch } = useContext(DarkModeContext);
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const { dispatch } = useContext(DarkModeContext)
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
 
   const handleSystemThemeClick = () => {
     if (prefersDarkMode) {
@@ -36,68 +36,68 @@ export default function Sidebar() {
         />
       </Toolbar>
       <Divider />
-      <Stack paddingTop={"5px"} spacing={1} direction="column">
+      <Stack paddingTop={'5px'} spacing={1} direction="column">
         <NavLink
           style={({ isActive }) => {
             return {
-              backgroundColor: isActive ? "#eeeff8" : "",
-              color: isActive ? "#5383ff" : "black",
-              borderRadius: "0 22px 22px 0",
-              paddingLeft: "25px",
-              textDecoration: "none",
-              padding: "5px 20px",
-            };
+              backgroundColor: isActive ? '#eeeff8' : '',
+              color: isActive ? '#5383ff' : 'black',
+              borderRadius: '0 22px 22px 0',
+              paddingLeft: '25px',
+              textDecoration: 'none',
+              padding: '5px 20px',
+            }
           }}
           className="nav_link"
-          to={`/`}
+          to={'/'}
         >
           Главная
         </NavLink>
         <NavLink
           style={({ isActive }) => {
             return {
-              backgroundColor: isActive ? "#eeeff8" : "",
-              color: isActive ? "#5383ff" : "black",
-              borderRadius: "0 22px 22px 0",
-              paddingLeft: "25px",
-              textDecoration: "none",
-              padding: "5px 20px",
-            };
+              backgroundColor: isActive ? '#eeeff8' : '',
+              color: isActive ? '#5383ff' : 'black',
+              borderRadius: '0 22px 22px 0',
+              paddingLeft: '25px',
+              textDecoration: 'none',
+              padding: '5px 20px',
+            }
           }}
           className="nav_link"
-          to={`/portfolio`}
+          to={'/portfolio'}
         >
           Портфолио
         </NavLink>
         <NavLink
           style={({ isActive }) => {
             return {
-              backgroundColor: isActive ? "#eeeff8" : "",
-              color: isActive ? "#5383ff" : "black",
-              borderRadius: "0 22px 22px 0",
-              paddingLeft: "25px",
-              textDecoration: "none",
-              padding: "5px 20px",
-            };
+              backgroundColor: isActive ? '#eeeff8' : '',
+              color: isActive ? '#5383ff' : 'black',
+              borderRadius: '0 22px 22px 0',
+              paddingLeft: '25px',
+              textDecoration: 'none',
+              padding: '5px 20px',
+            }
           }}
           className="nav_link"
-          to={`/contact`}
+          to={'/contact'}
         >
           Контакты
         </NavLink>
         <NavLink
           style={({ isActive }) => {
             return {
-              backgroundColor: isActive ? "#eeeff8" : "",
-              color: isActive ? "#5383ff" : "black",
-              borderRadius: "0 22px 22px 0",
-              paddingLeft: "25px",
-              textDecoration: "none",
-              padding: "5px 20px",
-            };
+              backgroundColor: isActive ? '#eeeff8' : '',
+              color: isActive ? '#5383ff' : 'black',
+              borderRadius: '0 22px 22px 0',
+              paddingLeft: '25px',
+              textDecoration: 'none',
+              padding: '5px 20px',
+            }
           }}
           className="nav_link"
-          to={`/404`}
+          to={'/404'}
         >
           Not Found
         </NavLink>
@@ -108,8 +108,8 @@ export default function Sidebar() {
         aria-label="outlined button group"
         size="small"
         sx={{
-          margin: "24px",
-          position: "absolute",
+          margin: '24px',
+          position: 'absolute',
           bottom: 0,
         }}
       >
@@ -118,5 +118,5 @@ export default function Sidebar() {
         <Button onClick={handleSystemThemeClick}>System</Button>
       </ButtonGroup>
     </nav>
-  );
+  )
 }

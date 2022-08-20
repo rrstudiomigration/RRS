@@ -1,16 +1,17 @@
-import { Box, Button, Container, Typography } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import error_404 from "../img/404.svg";
-import { Helmet } from "react-helmet";
+import React from 'react'
+import { Box, Button, Container, Typography } from '@mui/material'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import error_404 from '../img/404.svg'
+import { Helmet } from 'react-helmet'
 
 export default function NotFound() {
   return (
     <Box
       sx={{
-        alignItems: "center",
-        display: "flex",
+        alignItems: 'center',
+        display: 'flex',
         flexGrow: 1,
-        minHeight: "100%",
+        minHeight: '100%',
       }}
     >
       <Helmet>
@@ -20,20 +21,20 @@ export default function NotFound() {
       <Container maxWidth="md">
         <Box
           sx={{
-            alignItems: "center",
-            display: "flex",
-            flexDirection: "column",
+            alignItems: 'center',
+            display: 'flex',
+            flexDirection: 'column',
           }}
         >
-          <Box sx={{ textAlign: "center" }}>
+          <Box sx={{ textAlign: 'center' }}>
             <img
               alt="Страница не найдена или не существует"
               src={error_404}
               style={{
                 marginTop: 50,
                 marginBottom: 150,
-                display: "inline-block",
-                maxWidth: "100%",
+                display: 'inline-block',
+                maxWidth: '100%',
                 width: 560,
               }}
             />
@@ -52,5 +53,5 @@ export default function NotFound() {
         </Box>
       </Container>
     </Box>
-  );
+  )
 }

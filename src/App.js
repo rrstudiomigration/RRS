@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
-import { AppBar, Box, CssBaseline, Drawer, IconButton } from "@mui/material";
-import Sidebar from "./components/Base/Sidebar";
-import Footer from "./components/Base/Footer";
-import MenuIcon from "@mui/icons-material/Menu";
-import logo from "./components/img/logo.svg";
+import React, { useState } from 'react'
+import { Outlet } from 'react-router-dom'
+import { AppBar, Box, CssBaseline, Drawer, IconButton } from '@mui/material'
+import Sidebar from './components/Base/Sidebar'
+import Footer from './components/Base/Footer'
+import MenuIcon from '@mui/icons-material/Menu'
+import logo from './components/img/logo.svg'
 
-const drawerWidth = 240;
+const drawerWidth = 240
 
 export default function App() {
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
+    setMobileOpen(!mobileOpen)
+  }
 
   return (
     <Box
-      sx={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}
+      sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}
     >
       <CssBaseline />
       <AppBar
@@ -32,7 +32,7 @@ export default function App() {
           aria-label="open menu"
           edge="start"
           onClick={handleDrawerToggle}
-          sx={{ ml: 2, justifyContent: "flex-start", display: { sm: "none" } }}
+          sx={{ ml: 2, justifyContent: 'flex-start', display: { sm: 'none' } }}
         >
           <MenuIcon />
           <img src={logo} alt="Logo" />
@@ -43,7 +43,7 @@ export default function App() {
         sx={{
           width: { sm: drawerWidth },
           flexShrink: { sm: 0 },
-          height: { xs: "50px", sm: 0 },
+          height: { xs: '50px', sm: 0 },
         }}
       >
         <Drawer
@@ -54,9 +54,9 @@ export default function App() {
             keepMounted: true,
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
+            display: { xs: 'block', sm: 'none' },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box',
               width: drawerWidth,
             },
           }}
@@ -66,9 +66,9 @@ export default function App() {
         <Drawer
           variant="permanent"
           sx={{
-            display: { xs: "none", sm: "block" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
+            display: { xs: 'none', sm: 'block' },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box',
               width: drawerWidth,
             },
           }}
@@ -81,7 +81,7 @@ export default function App() {
         component="main"
         sx={{
           flexGrow: 1,
-          p: "24px 0",
+          p: '24px 0',
           width: { sm: `calc(100% - ${drawerWidth}px)` },
         }}
       >
@@ -92,13 +92,13 @@ export default function App() {
         sx={{
           flexGrow: 1,
           p: 3,
-          width: "100%",
-          border: "1px",
-          borderRadius: "5px",
+          width: '100%',
+          border: '1px',
+          borderRadius: '5px',
         }}
       >
         <Footer />
       </Box>
     </Box>
-  );
+  )
 }
