@@ -34,7 +34,7 @@ export default function Contact() {
           <Box sx={{ textAlign: 'center' }}>
             <img
               alt="SEO"
-              src={hero_seo as unknown as string}
+              src={hero_seo.default}
               style={{
                 marginTop: 50,
                 display: 'inline-block',

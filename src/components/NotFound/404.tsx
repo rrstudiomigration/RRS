@@ -29,7 +29,7 @@ export default function NotFound() {
           <Box sx={{ textAlign: 'center' }}>
             <img
               alt="Страница не найдена или не существует"
-              src={error_404 as unknown as string}
+              src={error_404.default}
               style={{
                 marginTop: 50,
                 marginBottom: 150,

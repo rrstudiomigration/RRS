@@ -30,7 +30,7 @@ export default function Sidebar() {
       <Toolbar>
         <CardMedia
           component="img"
-          image={logo.default as unknown as string}
+          image={logo.default}
           alt="RRStudio logo"
           sx={{ width: 1 }}
         />

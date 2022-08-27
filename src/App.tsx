@@ -35,7 +35,7 @@ export default function App() {
           sx={{ ml: 2, justifyContent: 'flex-start', display: { sm: 'none' } }}
         >
           <MenuIcon />
-          <img src={logo.default as unknown as string} alt="Logo" />
+          <img src={logo.default} alt="Logo" />
         </IconButton>
       </AppBar>
       <Box
