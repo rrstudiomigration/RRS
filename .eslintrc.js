@@ -5,10 +5,18 @@ module.exports = {
     'node': true
   },
   'extends': ['eslint:recommended', 'plugin:react/recommended'],
-  'overrides': [],
+  'overrides': [
+    {
+      'files': ['*.ts', '*.tsx'],
+      'rules': {
+        'no-undef': 'off'
+      }
+    }
+  ],
   'parserOptions': {
     'ecmaVersion': 'latest',
-    'sourceType': 'module'
+    'sourceType': 'module',
+    'project': './tsconfig.json',
   },
   'plugins': ['react'],
   'rules': {

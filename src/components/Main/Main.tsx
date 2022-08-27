@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
-import hero_seo from '../img/hero_seo.svg'
 import { Helmet } from 'react-helmet'
+import * as hero_seo from '../img/hero_seo.svg'
 
 export default function Main() {
   return (
@@ -35,7 +35,7 @@ export default function Main() {
           <Box sx={{ textAlign: 'center' }}>
             <img
               alt="SEO"
-              src={hero_seo}
+              src={hero_seo.default as unknown as string}
               style={{
                 marginTop: 50,
                 display: 'inline-block',

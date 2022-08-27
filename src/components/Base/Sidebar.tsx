@@ -9,8 +9,8 @@ import {
   Stack,
 } from '@mui/material'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import logo from '../img/logo.svg'
 import { DarkModeContext } from '../../context/darkModeContext'
+import * as logo from '../img/logo.svg'
 
 export default function Sidebar() {
 
@@ -30,7 +30,7 @@ export default function Sidebar() {
       <Toolbar>
         <CardMedia
           component="img"
-          image={logo}
+          image={logo.default}
           alt="RRStudio logo"
           sx={{ width: 1 }}
         />
