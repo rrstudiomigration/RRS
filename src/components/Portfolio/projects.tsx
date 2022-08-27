@@ -1,23 +1,23 @@
-import teltsov from '../img/projects/teltsov_by.webp'
-import akolica from '../img/projects/akolica_by.webp'
-import aldarinvest from '../img/projects/aldarinvest_com.webp'
-import aromaterra from '../img/projects/aromaterra_by.webp'
-import bytsennosti from '../img/projects/bytsennosti_by.webp'
-import casexstoma from '../img/projects/casexstoma_ru.webp'
-import clearhands from '../img/projects/clearhands_by.webp'
-import cond from '../img/projects/cond_by.webp'
-import condvent from '../img/projects/condvent_by.webp'
-import healthmedical from '../img/projects/healthmedical_ru.webp'
-import imred from '../img/projects/imred_by.webp'
-import kafekuhnya from '../img/projects/kafekuhnya_by.webp'
-import latrade from '../img/projects/latrade_by.webp'
-import magister from '../img/projects/magister_by.webp'
-import medmagister from '../img/projects/medmagister_by.webp'
-import pavetravod from '../img/projects/pavetravod_by.webp'
-import pegasgonda from '../img/projects/pegas-gonda_by.webp'
-import projectshop from '../img/projects/projectshop_by.webp'
-import stankopark from '../img/projects/stankopark_by.webp'
-import trudohrana from '../img/projects/trudohrana_org.webp'
+const teltsov = require('../img/projects/teltsov_by.webp') as string
+const akolica = require('../img/projects/akolica_by.webp') as string
+const aldarinvest = require('../img/projects/aldarinvest_com.webp') as string
+const aromaterra = require('../img/projects/aromaterra_by.webp') as string
+const bytsennosti = require('../img/projects/bytsennosti_by.webp') as string
+const casexstoma = require('../img/projects/casexstoma_ru.webp') as string
+const clearhands = require('../img/projects/clearhands_by.webp') as string
+const cond = require('../img/projects/cond_by.webp') as string
+const condvent = require('../img/projects/condvent_by.webp') as string
+const healthmedical = require('../img/projects/healthmedical_ru.webp') as string
+const imred = require('../img/projects/imred_by.webp') as string
+const kafekuhnya = require('../img/projects/kafekuhnya_by.webp') as string
+const latrade = require('../img/projects/latrade_by.webp') as string
+const magister = require('../img/projects/magister_by.webp') as string
+const medmagister = require('../img/projects/medmagister_by.webp') as string
+const pavetravod = require('../img/projects/pavetravod_by.webp') as string
+const pegasgonda = require('../img/projects/pegas-gonda_by.webp') as string
+const projectshop = require('../img/projects/projectshop_by.webp') as string
+const stankopark = require('../img/projects/stankopark_by.webp') as string
+const trudohrana = require('../img/projects/trudohrana_org.webp') as string
 
 export const itemData = [
   {

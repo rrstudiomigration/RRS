@@ -1,12 +1,28 @@
-const DarkModeReducer = (state, action) => {
-  switch (action.type) {
-  case 'LIGHT': {
+enum ThemeModeActionType {
+  LIGHT = 'LIGHT',
+  DARK = 'DARK'
+}
+
+interface ThemeAction {
+  type: ThemeModeActionType;
+}
+
+interface ThemeState {
+  darkMode: boolean
+}
+
+const DarkModeReducer = (state: ThemeState, action: ThemeAction) => {
+  const { type } = action
+  switch (type) {
+  case ThemeModeActionType.LIGHT: {
     return {
+      ...state,
       darkMode: false
     }
   }
-  case 'DARK': {
+  case ThemeModeActionType.DARK: {
     return {
+      ...state,
       darkMode: true
     }
   }

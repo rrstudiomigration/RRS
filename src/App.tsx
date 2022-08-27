@@ -4,7 +4,7 @@ import { AppBar, Box, CssBaseline, Drawer, IconButton } from '@mui/material'
 import Sidebar from './components/Base/Sidebar'
 import Footer from './components/Base/Footer'
 import MenuIcon from '@mui/icons-material/Menu'
-import logo from './components/img/logo.svg'
+import * as logo from './components/img/logo.svg'
 
 const drawerWidth = 240
 
@@ -35,7 +35,7 @@ export default function App() {
           sx={{ ml: 2, justifyContent: 'flex-start', display: { sm: 'none' } }}
         >
           <MenuIcon />
-          <img src={logo} alt="Logo" />
+          <img src={logo.default as unknown as string} alt="Logo" />
         </IconButton>
       </AppBar>
       <Box

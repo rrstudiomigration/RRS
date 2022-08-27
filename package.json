@@ -23,6 +23,7 @@
     "@types/node": "^18.7.8",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@types/react-helmet": "^6.1.5",
     "firebase-tools": "11.7.0",
     "prop-types": "15.8.1",
     "react": "18.2.0",
@@ -45,7 +46,9 @@
     ]
   },
   "devDependencies": {
-    "eslint": "latest",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "eslint": "^8.23.0",
+    "eslint-config-react-typescript": "^1.0.10",
     "eslint-plugin-react": "latest"
   }
 }
