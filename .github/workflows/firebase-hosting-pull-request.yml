@@ -1,10 +1,8 @@
-name: Deploy to Firebase Hosting on merge
-'on':
-  push:
-    branches:
-      - develop
+name: Deploy to Firebase Hosting on PR
+'on': pull_request
 jobs:
-  build_and_deploy_to_liveServer:
+  build_on_PR_to_testServer:
+    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,5 +13,4 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RRSTUDIO_7893F }}'
-          channelId: live
           projectId: rrstudio-7893f
