@@ -7769,9 +7769,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-tools@npm:11.8.0":
-  version: 11.8.0
-  resolution: "firebase-tools@npm:11.8.0"
+"firebase-tools@npm:11.8.1":
+  version: 11.8.1
+  resolution: "firebase-tools@npm:11.8.1"
   dependencies:
     "@google-cloud/pubsub": ^3.0.1
     abort-controller: ^3.0.0
@@ -7813,7 +7813,7 @@ __metadata:
     node-fetch: ^2.6.7
     open: ^6.3.0
     ora: ^5.4.1
-    portfinder: ^1.0.23
+    portfinder: ^1.0.32
     progress: ^2.0.3
     proxy-agent: ^5.0.0
     request: ^2.87.0
@@ -7837,7 +7837,7 @@ __metadata:
     ws: ^7.2.3
   bin:
     firebase: lib/bin/firebase.js
-  checksum: 887d8fe5b27be4ac94b5bd535a808d6dfe398530d1c9b061e466e82adc9a4ec0f368e1307ae2968ba447381726eb66ff4d6621942fb1b2ab64b5b71f800cf614
+  checksum: a36447eedd57f11ae0d22576f2ccd0c9c364be3ecb124e1e53022ead6d1bf2a3aa6a5c1606b641aaba64a780905d4b2ecce22803fc21cd4886dd139a81248cf5
   languageName: node
   linkType: hard
 
@@ -12258,7 +12258,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"portfinder@npm:^1.0.23":
+"portfinder@npm:^1.0.32":
   version: 1.0.32
   resolution: "portfinder@npm:1.0.32"
   dependencies:
@@ -14250,7 +14250,7 @@ __metadata:
     eslint: 8.23.0
     eslint-config-react-typescript: 1.0.10
     eslint-plugin-react: 7.31.1
-    firebase-tools: 11.8.0
+    firebase-tools: 11.8.1
     prop-types: 15.8.1
     react: 18.2.0
     react-dom: 18.2.0
