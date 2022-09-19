@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { NavLink } from 'react-router-dom'
 import {
   Toolbar,
   Divider,
@@ -11,6 +10,7 @@ import {
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { DarkModeContext } from '../../context/darkModeContext'
 import * as logo from '../img/logo.svg'
+import CustomLink from '../CustomLink/CustomLink'
 
 export default function Sidebar() {
   const { dispatch } = useContext(DarkModeContext)
@@ -36,54 +36,9 @@ export default function Sidebar() {
       </Toolbar>
       <Divider />
       <Stack paddingTop={'5px'} spacing={1} direction='column'>
-        <NavLink
-          style={({ isActive }) => {
-            return {
-              backgroundColor: isActive ? '#eeeff8' : '',
-              color: isActive ? '#5383ff' : 'black',
-              borderRadius: '0 22px 22px 0',
-              paddingLeft: '25px',
-              textDecoration: 'none',
-              padding: '5px 20px'
-            }
-          }}
-          className='nav_link'
-          to={'/'}
-        >
-          Главная
-        </NavLink>
-        <NavLink
-          style={({ isActive }) => {
-            return {
-              backgroundColor: isActive ? '#eeeff8' : '',
-              color: isActive ? '#5383ff' : 'black',
-              borderRadius: '0 22px 22px 0',
-              paddingLeft: '25px',
-              textDecoration: 'none',
-              padding: '5px 20px'
-            }
-          }}
-          className='nav_link'
-          to={'/portfolio'}
-        >
-          Портфолио
-        </NavLink>
-        <NavLink
-          style={({ isActive }) => {
-            return {
-              backgroundColor: isActive ? '#eeeff8' : '',
-              color: isActive ? '#5383ff' : 'black',
-              borderRadius: '0 22px 22px 0',
-              paddingLeft: '25px',
-              textDecoration: 'none',
-              padding: '5px 20px'
-            }
-          }}
-          className='nav_link'
-          to={'/contact'}
-        >
-          Контакты
-        </NavLink>
+        <CustomLink to='/'>Главная</CustomLink>
+        <CustomLink to='/portfolio'>Портфолио</CustomLink>
+        <CustomLink to='/contact'>Контакты</CustomLink>
       </Stack>
 
       <ButtonGroup
