@@ -5,24 +5,24 @@ import {
   Button,
   ButtonGroup,
   CardMedia,
-  Stack
+  Stack,
+  Box
 } from '@mui/material'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { DarkModeContext } from '../../context/darkModeContext'
 import * as logo from '../img/logo.svg'
 import CustomLink from '../CustomLink/CustomLink'
+import AuthStatus from '../auth/AuthStatus'
+import useAuth from '../../hooks/useAuth'
 
 export default function Sidebar() {
   const { dispatch } = useContext(DarkModeContext)
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
 
-  const handleSystemThemeClick = () => {
-    if (prefersDarkMode) {
-      dispatch({ type: 'DARK' })
-    } else {
-      dispatch({ type: 'LIGHT' })
-    }
-  }
+  const handleSystemThemeClick = () =>
+    prefersDarkMode ? dispatch({ type: 'DARK' }) : dispatch({ type: 'LIGHT' })
+
+  let auth = useAuth()
 
   return (
     <nav>
@@ -36,10 +36,22 @@ export default function Sidebar() {
       </Toolbar>
       <Divider />
       <Stack paddingTop={'5px'} spacing={1} direction='column'>
+        <CustomLink to='/login'>Login</CustomLink>
         <CustomLink to='/'>Главная</CustomLink>
         <CustomLink to='/portfolio'>Портфолио</CustomLink>
         <CustomLink to='/contact'>Контакты</CustomLink>
+        {auth.user && <CustomLink to='/admin'>Administration</CustomLink>}
       </Stack>
+
+      <Box
+        sx={{
+          margin: '24px',
+          position: 'absolute',
+          bottom: 20
+        }}
+      >
+        <AuthStatus />
+      </Box>
 
       <ButtonGroup
         variant='outlined'
