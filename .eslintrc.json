@@ -1,0 +1,58 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "react"],
+  "rules": {
+    // Base rules
+    "no-underscore-dangle": "off",
+    "no-plusplus": "off",
+    "max-lines-per-function": ["warn", 200],
+    "no-restricted-exports": [
+      "off",
+      {
+        "restrictedNamedExports": ["default"]
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    // Import rules
+    "import/no-anonymous-default-export": "off",
+    "import/prefer-default-export": "off",
+    "import/no-import-module-exports": "off",
+
+    // React rules
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx", ".tsx"]
+      }
+    ],
+    "react/require-default-props": [
+      "off",
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      { "selector": "typeLike", "format": ["PascalCase"] },
+      { "selector": "enumMember", "format": ["PascalCase"] }
+    ]
+  }
+}

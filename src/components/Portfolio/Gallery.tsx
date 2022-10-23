@@ -1,8 +1,8 @@
-import * as React from 'react'
-import Box from '@mui/material/Box'
-import ImageList from '@mui/material/ImageList'
-import ImageListItem from '@mui/material/ImageListItem'
-import { itemData } from './projects'
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import { itemData } from './projects';
 
 export default function Gallery() {
   return (
@@ -25,5 +25,5 @@ export default function Gallery() {
         ))}
       </ImageList>
     </Box>
-  )
+  );
 }

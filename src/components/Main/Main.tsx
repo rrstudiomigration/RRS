@@ -1,7 +1,7 @@
-import React from 'react'
-import { Box, Container, Typography } from '@mui/material'
-import { Helmet } from 'react-helmet'
-import * as hero_seo from '../img/hero_seo.svg'
+import React from 'react';
+import { Box, Container, Typography } from '@mui/material';
+import { Helmet } from 'react-helmet';
+import * as hero_seo from '../img/hero_seo.svg';
 
 export default function Main() {
   return (
@@ -47,5 +47,5 @@ export default function Main() {
         </Box>
       </Container>
     </Box>
-  )
+  );
 }

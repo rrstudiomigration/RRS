@@ -1,7 +1,7 @@
-import React from 'react'
-import { Box, Container, Typography } from '@mui/material'
-import { Helmet } from 'react-helmet'
-import * as hero_seo from '../img/hero_seo.svg'
+import React from 'react';
+import { Box, Container, Typography } from '@mui/material';
+import { Helmet } from 'react-helmet';
+import * as hero_seo from '../img/hero_seo.svg';
 
 export default function Contact() {
   return (
@@ -46,5 +46,5 @@ export default function Contact() {
         </Box>
       </Container>
     </Box>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import React from 'react'
-import { Box, Button, Container, Typography } from '@mui/material'
-import ArrowBackIcon from '@mui/icons-material/ArrowBack'
-import { Helmet } from 'react-helmet'
-import * as error_404 from '../img/404.svg'
+import React from 'react';
+import { Box, Button, Container, Typography } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Helmet } from 'react-helmet';
+import * as error_404 from '../img/404.svg';
 
 export default function NotFound() {
   return (
@@ -53,5 +53,5 @@ export default function NotFound() {
         </Box>
       </Container>
     </Box>
-  )
+  );
 }

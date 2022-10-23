@@ -1,6 +1,6 @@
 enum ThemeModeActionType {
   LIGHT = 'LIGHT',
-  DARK = 'DARK'
+  DARK = 'DARK',
 }
 
 interface ThemeAction {
@@ -8,26 +8,27 @@ interface ThemeAction {
 }
 
 interface ThemeState {
-  darkMode: boolean
+  darkMode: boolean;
 }
 
 const DarkModeReducer = (state: ThemeState, action: ThemeAction) => {
-  const { type } = action
+  const { type } = action;
   switch (type) {
-  case ThemeModeActionType.LIGHT: {
-    return {
-      ...state,
-      darkMode: false
+    case ThemeModeActionType.LIGHT: {
+      return {
+        ...state,
+        darkMode: false,
+      };
     }
-  }
-  case ThemeModeActionType.DARK: {
-    return {
-      ...state,
-      darkMode: true
+    case ThemeModeActionType.DARK: {
+      return {
+        ...state,
+        darkMode: true,
+      };
     }
+    default:
+      return state;
   }
-  default: return state
-  }
-}
+};
 
-export default DarkModeReducer
+export default DarkModeReducer;

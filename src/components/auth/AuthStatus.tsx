@@ -1,13 +1,13 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import useAuth from '../../hooks/useAuth'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 function AuthStatus() {
-  let auth = useAuth()
-  let navigate = useNavigate()
+  const auth = useAuth();
+  const navigate = useNavigate();
 
   if (!auth.user) {
-    return <p>You are not logged in.</p>
+    return <p>You are not logged in.</p>;
   }
 
   return (
@@ -15,13 +15,13 @@ function AuthStatus() {
       Welcome {auth.user}!{' '}
       <button
         onClick={() => {
-          auth.signOut(() => navigate('/'))
+          auth.signOut(() => navigate('/'));
         }}
       >
         Sign out
       </button>
     </p>
-  )
+  );
 }
 
-export default AuthStatus
+export default AuthStatus;
