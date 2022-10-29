@@ -13,7 +13,6 @@ const App = () => {
 
   return (
     <ThemeProvider theme={selectedTheme}>
-      s
       <BrowserRouter>
         <AppRouter />
       </BrowserRouter>

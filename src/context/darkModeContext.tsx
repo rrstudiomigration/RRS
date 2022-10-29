@@ -1,5 +1,5 @@
 import React, { createContext, Dispatch, useReducer, ReactNode } from 'react';
-import DarkModeReducer from './darkModeReducer';
+import DarkModeReducer, { ThemeAction } from './darkModeReducer';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 const initialState = {
@@ -12,7 +12,7 @@ interface DarkModeContextProviderProps {
 
 export const DarkModeContext = createContext<{
   darkMode: boolean;
-  dispatch: Dispatch<any>;
+  dispatch: Dispatch<ThemeAction>;
 }>({ ...initialState, dispatch: () => null });
 
 export const DarkModeContextProvider = ({ children }: DarkModeContextProviderProps) => {

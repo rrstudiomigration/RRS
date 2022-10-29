@@ -2,15 +2,15 @@ import React, { createContext, ReactNode, useState } from 'react';
 import { fakeAuthProvider } from '../api/auth';
 
 interface AuthContextType {
-  user: any;
+  user: string | null;
   signIn: (user: string, callback: VoidFunction) => void;
   signOut: (callback: VoidFunction) => void;
 }
 
-export const AuthContext = createContext<AuthContextType>(null!);
+export const AuthContext = createContext<AuthContextType | null>(null);
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<string | null>(null);
 
   const signIn = (newUser: string, callback: VoidFunction) => {
     return fakeAuthProvider.signIn(() => {

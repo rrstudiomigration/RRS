@@ -22,7 +22,7 @@ const Login = () => {
     const formData = new FormData(e.currentTarget);
     const username = formData.get('name') as string;
 
-    auth.signIn(username, () => {
+    auth?.signIn(username, () => {
       navigate(from, { replace: true });
     });
   }

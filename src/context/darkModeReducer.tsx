@@ -1,9 +1,9 @@
-enum ThemeModeActionType {
+export enum ThemeModeActionType {
   LIGHT = 'LIGHT',
   DARK = 'DARK',
 }
 
-interface ThemeAction {
+export interface ThemeAction {
   type: ThemeModeActionType;
 }
 

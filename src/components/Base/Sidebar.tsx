@@ -6,13 +6,16 @@ import * as logo from '../img/logo.svg';
 import CustomLink from '../CustomLink/CustomLink';
 import AuthStatus from '../auth/AuthStatus';
 import useAuth from '../../hooks/useAuth';
+import { ThemeModeActionType } from '../../context/darkModeReducer';
 
 export default function Sidebar() {
   const { dispatch } = useContext(DarkModeContext);
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
   const handleSystemThemeClick = () =>
-    prefersDarkMode ? dispatch({ type: 'DARK' }) : dispatch({ type: 'LIGHT' });
+    prefersDarkMode
+      ? dispatch({ type: ThemeModeActionType.DARK })
+      : dispatch({ type: ThemeModeActionType.LIGHT });
 
   const auth = useAuth();
 
@@ -27,7 +30,7 @@ export default function Sidebar() {
         <CustomLink to="/">Главная</CustomLink>
         <CustomLink to="/portfolio">Портфолио</CustomLink>
         <CustomLink to="/contact">Контакты</CustomLink>
-        {auth.user && <CustomLink to="/admin">Administration</CustomLink>}
+        {auth?.user && <CustomLink to="/admin">Administration</CustomLink>}
       </Stack>
 
       <Box
@@ -50,8 +53,8 @@ export default function Sidebar() {
           bottom: 0,
         }}
       >
-        <Button onClick={() => dispatch({ type: 'LIGHT' })}>Light</Button>
-        <Button onClick={() => dispatch({ type: 'DARK' })}>Dark</Button>
+        <Button onClick={() => dispatch({ type: ThemeModeActionType.LIGHT })}>Light</Button>
+        <Button onClick={() => dispatch({ type: ThemeModeActionType.DARK })}>Dark</Button>
         <Button onClick={handleSystemThemeClick}>System</Button>
       </ButtonGroup>
     </nav>
