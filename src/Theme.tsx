@@ -74,6 +74,6 @@ export const darkThemeProperties = {
       arrow: true,
     },
   },
-}
+};
 
-export const lightThemeProperties = {}
+export const lightThemeProperties = {};

@@ -1,7 +1,7 @@
-import React from 'react'
-import { Box, Container, Typography } from '@mui/material'
-import Gallery from './Gallery'
-import { Helmet } from 'react-helmet'
+import React from 'react';
+import { Box, Container, Typography } from '@mui/material';
+import Gallery from './Gallery';
+import { Helmet } from 'react-helmet';
 
 export default function Portfolio() {
   return (
@@ -38,5 +38,5 @@ export default function Portfolio() {
         </Box>
       </Container>
     </Box>
-  )
+  );
 }

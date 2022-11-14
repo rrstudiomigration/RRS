@@ -1,16 +1,16 @@
-import React, { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { DarkModeContextProvider } from './context/darkModeContext'
-import App from './App'
+import React, { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { DarkModeContextProvider } from './context/darkModeContext';
+import App from './App';
 
-const rootElement = document.getElementById('root')
-if (!rootElement) throw new Error('Failed to find the root element')
-const root = createRoot(rootElement)
+const rootElement = document.getElementById('root');
+if (!rootElement) throw new Error('Failed to find the root element');
+const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
     <DarkModeContextProvider>
       <App />
     </DarkModeContextProvider>
-  </StrictMode>
-)
+  </StrictMode>,
+);
