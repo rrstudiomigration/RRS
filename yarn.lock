@@ -3275,13 +3275,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:29.1.1":
-  version: 29.1.1
-  resolution: "@types/jest@npm:29.1.1"
+"@types/jest@npm:29.2.4":
+  version: 29.2.4
+  resolution: "@types/jest@npm:29.2.4"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: d9e6f7d6ab64cf45535369d0a3dc4640cbe6b37ab6f8927e874eacc199581338ebf6ff544f7c2cd188c5fc7cd0b3197aa72cb2b826f0a1352b93b89993711413
+  checksum: 9deb4756fe1b438d41ff1aae7d6c216c9e49e5fe60f539f8edb6698ffeb530ff7b25d37e223439b03602ca3a7397c9c2e53e1a39c7bd616353472fce0cc04107
   languageName: node
   linkType: hard
 
@@ -14538,7 +14538,7 @@ __metadata:
     "@emotion/styled": 11.10.4
     "@mui/icons-material": 5.10.6
     "@mui/material": 5.10.7
-    "@types/jest": 29.1.1
+    "@types/jest": 29.2.4
     "@types/node": 18.7.23
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
